@@ -1,0 +1,76 @@
+---
+
+---
+
+<section>
+<h2>LET'S <span id="green">GET IN TOUCH</span></h2>
+<form method="POST">
+    <label>
+      Subject
+      <input type="text" name="subject" required maxlength="100"/>
+    </label>
+    <label>
+      Email
+      <input type="email" name="email" required maxlength="500"/>
+    </label>
+    <label>
+        What can we do for you?
+      <input type="text" name="brief" required minlength="6" maxlength="250" />
+    </label>
+    <label>
+        What is your budget for this project?
+        <select id="budget">
+            <option label=">$500">Less than $500</option>
+            <option label="<$500">$500 - $1000</option>
+            <option label="<$1000">$1000 - $2000</option>
+            <option label="<$1500">$2000+</option>
+          </select>
+    </label>
+    <button>Submit</button>
+  </form>
+
+</section>
+
+<style>
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 90dvh;
+    width: auto;
+
+}
+
+h2 {
+	font-size: 3.15rem;
+    font-weight: 900;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: .25ch;
+}
+
+h5 {
+    font-size: .75rem;
+    font-weight: 500;
+    line-height: .25ch;
+}
+
+form {
+    display: grid;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 1rem;
+
+    width: 100%;
+    max-width: 500px;
+}
+#green {
+        color: #1DBF73;
+}
+</style>

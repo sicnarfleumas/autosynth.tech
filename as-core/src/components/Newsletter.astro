@@ -1,0 +1,50 @@
+---
+import PButton from "./Buttons/PButton.astro";
+
+---
+
+<section>
+    <div class="left">
+        <h2><span id="green">GET AHEAD</span> OF THE CURVE</h2>
+        <p>Don't let the competition surpass you. Get ahead with the latest AI breakthroughs and updates sent directly to your inbox. Our expert AI team carefully selects the essential news you can't afford to miss. Stay informed and take decisive action today!    </p>
+    </div>
+
+    <div class="right">
+        <PButton cta="SUBSCRIBE"/>
+    </div>
+</section>
+
+<style>
+
+section {
+    display: flex;
+
+    flex: 1;
+    
+    align-items: center;
+    justify-content: center;
+    
+    height: 70dvh;
+
+    padding: 0 25vw 0 25vw;
+
+    gap: 10vw;
+}
+    
+h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+}
+
+p {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+}
+   
+#green {
+            color: #1DBF73;
+}
+    
+    
+</style>

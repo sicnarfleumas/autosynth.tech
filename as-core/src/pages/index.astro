@@ -7,6 +7,11 @@ import Meta from '../components/Meta.astro';
 
 import Hero from '../components/Hero.astro';
 import Nav from '../components/Nav.astro';
+import Services from '../components/Services.astro';
+import Team from '../components/Team.astro';
+import Contact from '../components/Contact.astro';
+import Newsletter from '../components/Newsletter.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <!DOCTYPE html>
@@ -18,11 +23,30 @@ import Nav from '../components/Nav.astro';
   <body>
 	<Nav />
 	<Hero tagline="Empowering Growth"/>	
-	
+	<section class="Phrase">
+		<h2>Synthesizing <br>AI Automation <br>Solutions</h2>
+
+	</section>
+
+	<section class="About">
+		<h2>WHO <span id="green">WE ARE</span></h2>
+		<p>AutoSynth, your premier AI automation agency, is dedicated to <strong>fueling the growth of companies</strong>. As your trusted partner, we provide end-to-end AI development services that span from concept to production and beyond. We go beyond being mere machine learning specialists. We collaborate with startups and enterprises, transforming their ideas into cutting-edge AI products that optimize efficiency and accelerate business expansion. With our expertise across diverse industries, we'll work closely with you to build innovative solutions that propel your company's success to new heights. Seize this opportunity and thrive in the era of AI automation with AutoSynth.</p>
+	</section>
+
+	<Services />
+	<Team />
+	<Contact />
+	<Newsletter />
+	<Footer />
   </body>
 </html>
 
 <style>
+* {
+	padding: auto;
+	margin: auto;
+}
+
   :global() {
 	@font-face {
 	  font-family: 'Archivo';
@@ -34,5 +58,54 @@ import Nav from '../components/Nav.astro';
   }
   body {
 	font-family: 'Archivo', sans-serif;
+  }
+
+  .Phrase {
+	display: grid;
+	align-items: center;
+
+	font-size: 3rem;
+	text-align: center;
+
+	justify-content: center;
+	text-transform: uppercase;
+
+	background-color: #1DBF73;
+	color: #FFF;
+
+	height: 50dvh;
+	width: 100%;
+  }
+
+  .About {
+
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	justify-content: center;
+
+	width: 70%;
+	height: 100dvh;
+
+  }
+
+  h2 {
+	font-size: 3.15rem;
+	font-weight: 900;
+  }
+
+  p {
+	color: #000;
+	text-align: center;
+	font-size: 1.875rem;
+	font-family: 'Archivo', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 150%;
+
+  }
+
+  #green {
+	color: #1DBF73;
   }
 </style>

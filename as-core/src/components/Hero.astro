@@ -1,0 +1,68 @@
+---
+import PButton from '../components/Buttons/PButton.astro';
+import SButton from '../components/Buttons/SButton.astro';
+
+const {tagline} = Astro.props;
+---
+
+<div id="container">
+
+    <div id="_herotext">
+        <p id="_as">AutoSynth</p>
+        <p id="_aisol">AI SOLUTIONS</p>
+        <p id="_emp">{tagline}</p>
+    </div>
+    
+    <div id="cta">
+        <SButton text="SERVICES" />
+        <PButton cta="GET IN TOUCH" />
+    </div>
+
+</div>
+
+<style>
+
+#container {
+    background-color: white;
+    color: black;
+
+    font-family: 'Archivo', sans-serif;
+    font-size: 1rem;
+	font-weight: 600;
+
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	margin-left: 15%;
+
+    height: 85dvh;
+
+	
+}
+
+
+#_as {
+font-size: 5rem;
+font-weight: 900;
+margin-bottom: -3rem;
+}
+
+#_aisol {
+font-size: 2.8125rem;
+font-weight: 100;
+letter-spacing: 0.778rem;
+text-align: justify;
+}
+
+#_emp{
+font-size: 1.25rem;
+font-weight: 200;
+}
+
+#cta {
+	display: flex;
+	gap: 2rem;
+}
+</style>

@@ -1,0 +1,36 @@
+---
+import '@fontsource-variable/archivo';
+
+const {cta} = Astro.props;
+---
+
+<button>{cta}</button>
+
+<style>
+
+
+button {
+  font-size: inherit;
+  font: inherit;
+  font-weight: inherit;
+  color: #FFF;
+  
+  padding: 0.75em 3em;
+  background: #1DBF73;
+  
+  border: none;
+  border-radius: .75rem;
+  box-shadow: 0px 4px 4px 0px #777;
+  
+  cursor: pointer;
+
+
+}
+
+button:hover {
+  box-shadow: 0px 4px 4px 0px #777;
+
+}
+
+</style>
+

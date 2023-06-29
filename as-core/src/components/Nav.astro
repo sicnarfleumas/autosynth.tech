@@ -1,0 +1,36 @@
+---
+import PButton from "./Buttons/PButton.astro";
+---
+
+<nav>
+
+    <img src="/logo.svg" alt="AutoSynth Logo">
+    <ul>
+        <li></li>
+        <li>ABOUT</li>
+        <li>SERVICES</li>
+        <li><PButton cta="CONNECT"/></li>
+    </ul>
+</nav>
+
+<style>
+
+    img {
+        width: 100px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+
+    }
+    
+    li {
+        display: inline-block;
+        margin: 0 1rem;
+
+        font-family: inherit;
+        font-weight: 900;
+    }
+</style>
